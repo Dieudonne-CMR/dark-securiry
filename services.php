@@ -4,7 +4,25 @@ include('api/api_services.php');
 $services = recup_services();
 // var_dump($services);
 
-
+function reduireTexte($texte, $limite = 100) {
+    $texte = strip_tags($texte);
+    $texte = trim($texte);
+  
+    if (strlen($texte) > $limite) {
+      $texteTronque = substr($texte, 0, $limite);
+      $dernierEspace = strrpos($texteTronque, ' ');
+  
+      if ($dernierEspace !== false) {
+        $texteTronque = substr($texteTronque, 0, $dernierEspace);
+      }
+  
+      $texteTronque .= '...';
+  
+      return $texteTronque;
+    } else {
+      return $texte;
+    }
+  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -78,7 +96,7 @@ $services = recup_services();
                             <a href="service.detail.php?mat_service=<?=$value->matricule_service ?>" class="d-block hover relative bg-dark-2 p-40 pb-20 h-100 mb-sm-30">
                                 <img src="<?php echo $img_service . $value -> image ;?>" class="w-70px mb-3 hover-jello infinite" alt="">
                                 <h4><?= $value->nom ?></h4>
-                                <p><?= strip_tags( $value->description)  ?></p>
+                                <p><?= reduireTexte($value->description) ?></p>
                                 <div class="triangle-bottomright-dark"></div>
                             </a>
                         </div>

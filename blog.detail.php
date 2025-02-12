@@ -69,7 +69,7 @@ endif;
                 </div>
                 <div class="crumb-wrapper">
                     <ul class="crumb">
-                        <li><a href="index.html">Acceuil</a></li>
+                        <li><a href="blog.php">Acceuil</a></li>
                         <li class="active">Blog detail</li>
                     </ul>
                 </div>
@@ -93,13 +93,13 @@ endif;
                                     <img src="<?php echo $url_image . $photo ?>" class="w-100 rounded-1" alt="">
 
                                     <h4><?= $titre ?></</h4>
-                                    <p><?= $content ?></p>
+                                    <p style="font-size: 5px;"><?= $content ?></p>
 
                                 </div>
                             </div>
 
                             <div class="spacer-single"></div>
-
+                            <?php /*
                             <div id="blog-comment">
                                 <h4>Comments (5)</h4>
 
@@ -201,10 +201,10 @@ endif;
                                         </form>
                                     </div>
                                 </div>
-                            </div>
+                            </div>*/?>
 
                         </div>
-
+                        
                         <div class="col-lg-4">
                             <div class="widget widget-post">
                                 <h4>Recent Posts</h4>
@@ -265,7 +265,6 @@ endif;
                                     <li><a href="#link">Website</a></li>
                                 </ul>
                             </div>
-
                         </div>
                     </div>
                 </div>
