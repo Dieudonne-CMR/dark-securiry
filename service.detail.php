@@ -160,21 +160,22 @@ endif;
                             <h2><?= $titre ?></h2>
 
                             <p><?= $description ?></p>
-
+                            <?php /*
                             <h4>Autres Services</h4>
                             <?php foreach($services as $value):?>
                             <ul class="ul-style-2">
                             <li class="item">
                                 <a href="service.detail.php?mat_service=<?=$value->matricule_service ?>"> <?= $value->nom ?></a>
                             </li>
-                                 <?php /*
+                                 
                                 <li>Customized Security Solutions</li>
                                 <li>High-Quality Cameras</li>
                                 <li>Installation & Setup</li>
                                 <li>Remote Viewing Access</li>
-                                <li>Maintenance & Support</li> */?>
+                                <li>Maintenance & Support</li> 
                             </ul>
                             <?php endforeach ?>
+                            */?>
                         </div>
                     </div>
                 </div>

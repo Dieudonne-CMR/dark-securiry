@@ -36,7 +36,7 @@
                             </div>
                             <div class="de-flex-col header-col-mid">
                                 <ul id="mainmenu">
-                                    <li><a class="menu-item" href="services.php">Acceuil</a>
+                                    <li><a class="menu-item" href="index.php">Acceuil</a>
                                     <?php /*
                                         <ul class="mega">
                                             <li>
@@ -94,8 +94,8 @@
                                         </ul>
                                         */?>
                                     </li>
-                                    <li><a class="menu-item" href="brands.html">Brands</a></li>
-                                    <li><a class="menu-item" href="projects.html">Projects</a></li>  
+                                    <!-- <li><a class="menu-item" href="brands.html">Brands</a></li> -->
+                                    <li><a class="menu-item" href="about.php">A propos</a></li>  
                                     <li><a class="menu-item" href="blog.php">Blog</a> 
                                     <?php /* 
                                         <ul>

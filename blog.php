@@ -2,7 +2,25 @@
 include('api/cle_api.php');
 include('api/api_article.php');
 $obj_tous_post = recup_article();
-
+function reduireTexte($texte, $limite = 200) {
+    $texte = strip_tags($texte);
+    $texte = trim($texte);
+  
+    if (strlen($texte) > $limite) {
+      $texteTronque = substr($texte, 0, $limite);
+      $dernierEspace = strrpos($texteTronque, ' ');
+  
+      if ($dernierEspace !== false) {
+        $texteTronque = substr($texteTronque, 0, $dernierEspace);
+      }
+  
+      $texteTronque .= '...';
+  
+      return $texteTronque;
+    } else {
+      return $texte;
+    }
+  }
 
 ?>
 
@@ -72,27 +90,23 @@ $obj_tous_post = recup_article();
             <section>
                 <div class="container">
                     <div class="row g-4">
-
-                        <div class="col-lg-8">
+                    <?php foreach ($obj_tous_post as $value): ?>
+                        <div class="col-lg-3">
                             <div class="overflow-hidden">
-                            <?php foreach ($obj_tous_post as $value): ?>
                                 <div class="hover relative rounded-1 overflow-hidden">
-                                    <?php /* <div class="abs z-2 bg-color text-white p-3 pb-2 m-4 text-center fw-600">
-                                        <h4 class="fs-36 mb-0 lh-1">20</h4>
-                                        <span>Jun</span>
-                                    </div>*/?>
+            
                                     <img src="<?php echo $url_image . $value -> photo ?>" class="w-100 hover-scale-1-1" alt="">
                                     <a href="blog.detail.php?mat_post=<?=$value->matricule?>" class="d-block abs w-100 h-100 top-0 start-0"></a>
                                 </div>
 
                                 <div class="p-40 bg-dark-2 relative">
-                                    <h4><?= $value->titre ?></h4>
-                                    <?php /*<a class="text-white" href="blog-single.html"><?= $value->content ?></a>*/?>
+                                    <h4><a class="text-white" href="blog.detail.php?mat_post=<?=$value->matricule?>"><?= $value->titre ?></a></h4>
+
                                     <div class="triangle-bottomright-dark"></div>
                                 </div>
-                                <?php endforeach; ?>
                             </div>
                         </div>
+                        <?php endforeach; ?>
                         <?php /*
                         <div class="col-lg-3">
                             <div class="overflow-hidden">
@@ -218,8 +232,7 @@ $obj_tous_post = recup_article();
                                     <div class="triangle-bottomright-dark"></div>
                                 </div>
                             </div>
-                        </div> */?>
-                        
+                        </div>*/?>
                         <!-- pagination begin -->
                         <div class="col-lg-12 pt-4 text-center">
                             <div class="d-inline-block">
