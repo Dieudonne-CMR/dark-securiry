@@ -91,7 +91,7 @@ function reduireTexte($texte, $limite = 100) {
             <section>
                 <div class="container">
                     <div class="row g-4">
-                    <?php foreach($services as $value):?>
+                    <?php foreach ($services as $value): ?>
                         <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay="0s">
                             <a href="service.detail.php?mat_service=<?=$value->matricule_service ?>" class="d-block hover relative bg-dark-2 p-40 pb-20 h-100 mb-sm-30">
                                 <img src="<?php echo $img_service . $value -> image ;?>" class="w-70px mb-3 hover-jello infinite" alt="">

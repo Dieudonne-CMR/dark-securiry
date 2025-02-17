@@ -110,7 +110,7 @@
                             </div>
                             <div class="de-flex-col">
                                 <div class="menu_side_area">          
-                                    <a class="btn-main fx-slide" href="contact.html"><span>Get a Free Quote</span></a>
+                                    <a class="btn-main fx-slide" href="contact.html"><span>Obtenez un devis gratuit</span></a>
                                     <span id="menu-btn"></span>
                                 </div>
 
