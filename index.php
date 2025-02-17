@@ -1,3 +1,8 @@
+<?php
+include("api/cle_api.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -61,7 +66,7 @@
                                                 <div class="sw-text-wrapper">
                                                     <div class="subtitle wow">Five-Star Service</div>
                                                     <div>
-                                                        <h1 class="cam-style text-uppercase mb-3 wow">Protection You Can Trust<span></span><span></span><span></span><span></span></h1>
+                                                        <h1 class="cam-style text-uppercase mb-3 wow"><?php echo $titre_banniere1?><span></span><span></span><span></span><span></span></h1>
                                                     </div>                                                    
                                                     <div class="spacer-10"></div>
                                                     <a class="btn-main btn-line fx-slide mb10 mb-3 wow" href="contact.html"><span>Get a Free Quote</span></a>
@@ -76,8 +81,8 @@
                                                 <div class="relative">
                                                     <img src="images/svg-color/ultra-high-resolution.svg" class="absolute w-70px z-2" alt="">
                                                     <div class="ps-90">
-                                                        <h4 class="mb-0">Ultra High Resolution</h4>
-                                                        <p>Trust us to deliver reliable solutions.</p>
+                                                        <h4 class="mb-0">Resolution de haute qualite</h4>
+                                                        <p>Votre sécurité, notre priorité : des solutions de surveillance fiables avec détection de mouvement.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -87,7 +92,7 @@
                                                     <img src="images/svg-color/night-vision.svg" class="absolute w-70px z-2" alt="">
                                                     <div class="ps-90">
                                                         <h4 class="mb-0">Night Vision</h4>
-                                                        <p>Trust us to deliver reliable solutions.</p>
+                                                        <p> des installations professionnelles et des équipements de pointe pour une surveillance optimale.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -97,7 +102,7 @@
                                                     <img src="images/svg-color/motion-detection.svg" class="absolute w-70px z-2" alt="">
                                                     <div class="ps-90">
                                                         <h4 class="mb-0">Motion Detection</h4>
-                                                        <p>Trust us to deliver reliable solutions.</p>
+                                                        <p>nous vous offrons des solutions de surveillance personnalisées et fiables, adaptées à vos besoins</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -123,10 +128,10 @@
                                                 <div class="sw-text-wrapper">
                                                     <div class="subtitle wow">Five-Star Service</div>
                                                     <div>
-                                                        <h1 class="cam-style text-uppercase mb-3 wow">Safety In Every Frame<span></span><span></span><span></span><span></span></h1>
+                                                        <h1 class="cam-style text-uppercase mb-3 wow"><?php echo $titre_banniere2?><span></span><span></span><span></span><span></span></h1>
                                                     </div>                                                  
                                                     <div class="spacer-10"></div>
-                                                    <a class="btn-main btn-line fx-slide mb10 mb-3 wow" href="contact.html"><span>Get a Free Quote</span></a>
+                                                    <a class="btn-main btn-line fx-slide mb10 mb-3 wow" href="contact.php"><span>Get a Free Quote</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -139,7 +144,7 @@
                                                     <img src="images/svg-color/ultra-high-resolution.svg" class="absolute w-70px z-2" alt="">
                                                     <div class="ps-90">
                                                         <h4 class="mb-0">Ultra High Resolution</h4>
-                                                        <p>Trust us to deliver reliable solutions.</p>
+                                                        <p>nous vous proposons des systèmes de caméras de surveillance avec détection de mouvement adaptés à vos besoins spécifiques</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -149,7 +154,7 @@
                                                     <img src="images/svg-color/night-vision.svg" class="absolute w-70px z-2" alt="">
                                                     <div class="ps-90">
                                                         <h4 class="mb-0">Night Vision</h4>
-                                                        <p>Trust us to deliver reliable solutions.</p>
+                                                        <p>nos systèmes de caméras de surveillance avec détection de mouvement assurent une protection constante de votre propriété</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -159,7 +164,7 @@
                                                     <img src="images/svg-color/motion-detection.svg" class="absolute w-70px z-2" alt="">
                                                     <div class="ps-90">
                                                         <h4 class="mb-0">Motion Detection</h4>
-                                                        <p>Trust us to deliver reliable solutions.</p>
+                                                        <p>nous vous accompagnons dans le choix et l'installation de votre système de surveillance avec détection de mouvement.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -187,47 +192,52 @@
                 <div class="container">
                     <div class="row g-4 mb-2 justify-content-center">
                         <div class="col-lg-6 text-center">
-                            <div class="subtitle wow fadeInUp">Our Services</div>
-                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Professional CCTV Installation and Security Services</h2>
+                            <div class="subtitle wow fadeInUp">Nos Services</div>
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Sécurité de vidéosurveillance</h2>
                         </div>
                     </div>
 
                     <div class="row g-4">
                         <div class="col-lg-3 col-md-6 wow fadeInRight" data-wow-delay="0s">
-                            <a href="service-single.html" class="d-block hover relative bg-dark-2 p-40 pb-20 h-100 mb-sm-30" data-0="transform:scale(0); opacity:0" data-600="transform:scale(1); opacity:1">
+                            <a href="service.detail.php?mat_service=<?php echo $matricule_service ?>" class="d-block hover relative bg-dark-2 p-40 pb-20 h-100 mb-sm-30" data-0="transform:scale(0); opacity:0" data-600="transform:scale(1); opacity:1">
                                 <img src="images/svg-color/cctv.svg" class="w-70px mb-3 hover-jello infinite" alt="">
-                                <h4>Installation</h4>
-                                <p>Setting up cameras in strategic locations to ensure optimal coverage.</p>
+                                <h4><?php echo $titre_s1?></h4>
+                                <h4>Installation de caméras</h4>
+                                <p>Protégez votre domicile ou votre entreprise 24h/24 et 7j/7 grâce à notre service de télésurveillance...</p>
                                 <div class="triangle-bottomright-dark"></div>
                             </a>
                         </div>
 
                         <div class="col-lg-3 col-md-6 wow fadeInRight" data-wow-delay=".2s">
-                            <a href="service-single.html" class="d-block hover relative bg-dark-2 p-40 pb-20 h-100 mb-sm-30" data-0="transform:scale(0); opacity:0" data-600="transform:scale(1); opacity:1">
+                            <a href="service.detail.php?mat_service=<?php echo $matricule_service ?>" class="d-block hover relative bg-dark-2 p-40 pb-20 h-100 mb-sm-30" data-0="transform:scale(0); opacity:0" data-600="transform:scale(1); opacity:1">
                                 <img src="images/svg-color/networking.svg" class="w-70px mb-3 hover-jello infinite" alt="">
-                                <h4>System Design</h4>
-                                <p>Customized security system planning to meet specific requirements.</p>
+                                <h4><?php echo $titre_s2?></h4>
+                                <h4>Systèmes d'alarme</h4>
+                                <p>Dissuadez les cambrioleurs et protégez vos proches avec nos systèmes d'alarme performants...</p>
                                 <div class="triangle-bottomright-dark"></div>
                             </a>
                         </div>
 
                         <div class="col-lg-3 col-md-6 wow fadeInRight" data-wow-delay=".4s">
-                            <a href="service-single.html" class="d-block hover relative bg-dark-2 p-40 pb-20 h-100 mb-sm-30" data-0="transform:scale(0); opacity:0" data-600="transform:scale(1); opacity:1">
+                            <a href="service.detail.php?mat_service=<?php echo $matricule_service ?>" class="d-block hover relative bg-dark-2 p-40 pb-20 h-100 mb-sm-30" data-0="transform:scale(0); opacity:0" data-600="transform:scale(1); opacity:1">
                                 <img src="images/svg-color/setting.svg" class="w-70px mb-3 hover-jello infinite" alt="">
-                                <h4>Maintenance</h4>
-                                <p>Regular servicing and fixing of camera systems to ensure continuous functionality.</p>
+                                <h4><?php echo $titre_s1?></h4>
+                                <h4>Contrôle d'accès</h4>
+                                <p>Sécurisez l'accès à vos locaux avec nos solutions de contrôle d'accès. Badges, digicodes, biométrie...</p>
                                 <div class="triangle-bottomright-dark"></div>
                             </a>
                         </div>
 
                         <div class="col-lg-3 col-md-6 wow fadeInRight" data-wow-delay=".6s">
-                            <a href="service-single.html" class="d-block hover relative bg-dark-2 p-40 pb-20 h-100 mb-sm-30" data-0="transform:scale(0); opacity:0" data-600="transform:scale(1); opacity:1">
+                            <a href="service.detail.php?mat_service=<?php echo $matricule_service ?>" class="d-block hover relative bg-dark-2 p-40 pb-20 h-100 mb-sm-30" data-0="transform:scale(0); opacity:0" data-600="transform:scale(1); opacity:1">
                                 <img src="images/svg-color/monitor.svg" class="w-70px mb-3 hover-jello infinite" alt="">
-                                <h4>Monitoring</h4>
-                                <p>Real-time monitoring of security cameras by professionals or automated systems.</p>
+                                <?php echo $titre_s1?>
+                                <h4>Intervention</h4>
+                                <p>Intervention rapide de nos agents de sécurité. Rondes de surveillance, levée de doute, gestion des incidents...</p>
                                 <div class="triangle-bottomright-dark"></div>
                             </a>
                         </div>
+                        
                     </div>
                 </div>
             </section>
@@ -247,29 +257,29 @@
                             <div class="me-lg-3">
                                 <div class="spacer-double"></div>
                                 <div class="spacer-single sm-hide"></div>
-                                <div class="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Why Choose Us</div>
-                                <h2 class="wow fadeInUp" data-wow-delay=".2s">Unmatched Surveillance, Unrivaled Protection</h2>
+                                <div class="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Pourquoi nous choisir</div>
+                                <h2 class="wow fadeInUp" data-wow-delay=".2s">Surveillance inégalée</h2>
 
                                 <div class="row g-4">
                                     <div class="col-lg-4 col-md-4 col-sm-6">
                                         <div class="py-4 bg-dark rounded-1 text-center wow fadeInUp" data-wow-delay=".0s">
                                             <h1 class="fs-72 mb-2">15</h1>
-                                            <div class="fs-18">Years of Experience</div>
+                                            <div class="fs-18">Années d’expérience</div>
                                         </div>
                                     </div>
                                     <div class="col-lg-8 col-md-8 col-sm-6">
                                         <ul class="ul-style-2 fw-600 text-white mb-4 wow fadeInUp" data-wow-delay=".6s">
-                                          <li>Expertise You Can Trust</li>
-                                          <li>Top-Notch Technology</li>
-                                          <li>Custom Solutions for Every Budget</li>
-                                          <li>24/7 Support and Maintenance</li>
-                                          <li>Comprehensive Security Solutions</li>
-                                          <li>Proven Track Record</li>
+                                          <li>Une expertise digne de confiance</li>
+                                          <li>Une technologie de pointe</li>
+                                          <li>Des solutions personnalisées pour tous les budgets</li>
+                                          <li>Assistance et maintenance 24h/24 et 7j/7</li>
+                                          <li>Solutions de sécurité complètes</li>
+                                          <li>Expérience éprouvée</li>
                                         </ul>
                                     </div>
                                 </div>
 
-                                <a class="btn-main fx-slide mb10 mb-3 wow fadeIn" href="contact.html"><span>Get a Free Quote</span></a>
+                                <a class="btn-main fx-slide mb10 mb-3 wow fadeIn" href="contact.html"><span>Obtenez un devis gratuit</span></a>
                                 <div class="spacer-single sm-hide"></div>
                             </div>
                       </div>
@@ -438,13 +448,13 @@
                                 <div class="row align-items-center g-4 gx-5 relative z-index-1000">
                                     <div class="col-lg-8">
                                         <div class="subtitle wow fadeInUp mb-3">CCTV Specialist</div>
-                                        <h2 class="mb20 wow fadeInUp" data-wow-delay=".2s">At Ucam, we specialize in providing top-tier CCTV surveillance solutions designed to keep your property safe and secure.</h2>
-                                        <a class="btn-main btn-line fx-slide" href="contact.html"><span>Get a Free Quote</span></a>
+                                        <h2 class="mb20 wow fadeInUp" data-wow-delay=".2s">Ucam : des solutions de vidéosurveillance de premier ordre pour votre sécurité.</h2>
+                                        <a class="btn-main btn-line fx-slide" href="contact.html"><span>Obtenez un devis gratuit</span></a>
                                     </div>
                                     <div class="col-lg-4 text-center">
-                                        <img src="images/team/1.webp" class="img-fluid rounded-1 wow scaleIn" alt="">
-                                        <h5 class="mt-3 mb-0">Jeffery Mussman</h5>
-                                        <p class="small mb-2">Founder &amp;  CEO</p>
+                                        <img src="images/man-city.jpg" class="img-fluid rounded-1 wow scaleIn" alt="">
+                                        <h5 class="mt-3 mb-0">Monsieur xx</h5>
+                                        <p class="small mb-2">Foundateur &amp;  pdg</p>
                                     </div>
                                 </div>
 
@@ -459,8 +469,8 @@
                 <div class="container">
                     <div class="row g-4 mb-4">
                         <div class="col-lg-6 offset-lg-3 text-center">
-                            <div class="subtitle wow fadeInUp mb-3">Testimonials</div>
-                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Our Happy Customers</h2>
+                            <div class="subtitle wow fadeInUp mb-3">Témoignages</div>
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Nos clients satisfaits</h2>
                         </div>
                     </div>
 
@@ -469,7 +479,7 @@
                             <div class="item">
                                 <div class="relative text-light text-center">
                                     <div class="text-center">
-                                        <img class="d-inline w-80px rounded-1" alt="" src="images/testimonial/1.webp">
+                                        <img class="d-inline w-80px rounded-1" alt="" src="images/profile.png">
                                     </div>
                                     <div class="mt-3 fw-600">Michael S.<span>Customer</span></div>
                                     <div class="de-rating-ext mb-3">
@@ -481,13 +491,13 @@
                                             <i class="fa fa-star"></i>
                                         </span>
                                     </div>
-                                    <p>"The system is easy to use, the image quality is crystal clear, and their customer service has been exceptional. Highly recommend!"</p>
+                                    <p>"Grâce à cette entreprise de sécurité, je peux enfin dormir sur mes deux oreilles. Je sais que ma maison est protégée"</p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="relative text-light text-center">
                                     <div class="text-center">
-                                        <img class="d-inline w-80px rounded-1" alt="" src="images/testimonial/2.webp">
+                                        <img class="d-inline w-80px rounded-1" alt="" src="images/profile.png">
                                     </div>
                                     <div class="mt-3 fw-600">Robert L.<span>Customer</span></div>
                                     <div class="de-rating-ext mb-3">
@@ -499,13 +509,13 @@
                                             <i class="fa fa-star"></i>
                                         </span>
                                     </div>
-                                    <p>"The system is easy to use, the image quality is crystal clear, and their customer service has been exceptional. Highly recommend!"</p>
+                                    <p>"J'ai apprécié les conseils personnalisés de l'équipe pour choisir le système de sécurité le plus adapté à mes besoins. "</p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="relative text-light text-center">
                                     <div class="text-center">
-                                        <img class="d-inline w-80px rounded-1" alt="" src="images/testimonial/3.webp">
+                                        <img class="d-inline w-80px rounded-1" alt="" src="images/profile.png">
                                     </div>
                                     <div class="mt-3 fw-600">Jake M.<span>Customer</span></div>
                                     <div class="de-rating-ext mb-3">
@@ -517,13 +527,13 @@
                                             <i class="fa fa-star"></i>
                                         </span>
                                     </div>
-                                    <p>"The system is easy to use, the image quality is crystal clear, and their customer service has been exceptional. Highly recommend!"</p>
+                                    <p>"L'équipe a installé mon système de sécurité en un temps record et le travail a été fait proprement. Je suis très content du résultat."</p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="relative text-light text-center">
                                     <div class="text-center">
-                                        <img class="d-inline w-80px rounded-1" alt="" src="images/testimonial/4.webp">
+                                        <img class="d-inline w-80px rounded-1" alt="" src="images/profile.png">
                                     </div>
                                     <div class="mt-3 fw-600">Alex P.<span>Customer</span></div>
                                     <div class="de-rating-ext mb-3">
@@ -535,13 +545,13 @@
                                             <i class="fa fa-star"></i>
                                         </span>
                                     </div>
-                                    <p>"The system is easy to use, the image quality is crystal clear, and their customer service has been exceptional. Highly recommend!"</p>
+                                    <p>"J'ai eu un problème avec mon système d'alarme et le service client a été très réactif. Ils ont résolu le problème rapidement et efficacement. "</p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="relative text-light text-center">
                                     <div class="text-center">
-                                        <img class="d-inline w-80px rounded-1" alt="" src="images/testimonial/5.webp">
+                                        <img class="d-inline w-80px rounded-1" alt="" src="images/profile.png">
                                     </div>
                                     <div class="mt-3 fw-600">Carlos R.<span>Customer</span></div>
                                     <div class="de-rating-ext mb-3">
@@ -553,13 +563,13 @@
                                             <i class="fa fa-star"></i>
                                         </span>
                                     </div>
-                                    <p>"The system is easy to use, the image quality is crystal clear, and their customer service has been exceptional. Highly recommend!"</p>
+                                    <p>"J'ai fait appel à leurs services pour une surveillance événementielle et j'ai été très impressionné par le professionnalisme et la réactivité des agents. "</p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="relative text-light text-center">
                                     <div class="text-center">
-                                        <img class="d-inline w-80px rounded-1" alt="" src="images/testimonial/6.webp">
+                                        <img class="d-inline w-80px rounded-1" alt="" src="images/profile.png">
                                     </div>
                                     <div class="mt-3 fw-600">Edward B.<span>Customer</span></div>
                                     <div class="de-rating-ext mb-3">
@@ -571,13 +581,13 @@
                                             <i class="fa fa-star"></i>
                                         </span>
                                     </div>
-                                    <p>"The system is easy to use, the image quality is crystal clear, and their customer service has been exceptional. Highly recommend!"</p>
+                                    <p>"Les caméras de surveillance sont très performantes et offrent une qualité d'image exceptionnelle. La détection de mouvement est très précise "</p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="relative text-light text-center">
                                     <div class="text-center">
-                                        <img class="d-inline w-80px rounded-1" alt="" src="images/testimonial/7.webp">
+                                        <img class="d-inline w-80px rounded-1" alt="" src="images/profile.png">
                                     </div>
                                     <div class="mt-3 fw-600">Daniel H.<span>Customer</span></div>
                                     <div class="de-rating-ext mb-3">
@@ -589,13 +599,13 @@
                                             <i class="fa fa-star"></i>
                                         </span>
                                     </div>
-                                    <p>"The system is easy to use, the image quality is crystal clear, and their customer service has been exceptional. Highly recommend!"</p>
+                                    <p>"J'ai comparé plusieurs entreprises de sécurité et celle-ci offre le meilleur rapport qualité-prix. Les équipements sont de qualité et l'installation est impeccable. "</p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="relative text-light text-center">
                                     <div class="text-center">
-                                        <img class="d-inline w-80px rounded-1" alt="" src="images/testimonial/8.webp">
+                                        <img class="d-inline w-80px rounded-1" alt="" src="images/profile.png">
                                     </div>
                                     <div class="mt-3 fw-600">Bryan G.<span>Customer</span></div>
                                     <div class="de-rating-ext mb-3">
@@ -607,7 +617,7 @@
                                             <i class="fa fa-star"></i>
                                         </span>
                                     </div>
-                                    <p>"The system is easy to use, the image quality is crystal clear, and their customer service has been exceptional. Highly recommend!"</p>
+                                    <p>"L'équipe a été très professionnelle et a su répondre à toutes mes questions. L'installation de mon système de surveillance s'est déroulée sans problème "</p>
                                 </div>
                             </div>
                         </div>
@@ -622,26 +632,26 @@
                             <a href="contact.html" class="d-block relative bg-dark-2 text-light p-4 rounded-1">
                                 <i class="id-color p-3 rounded-1 fs-56 icofont-phone-circle"></i>
                                 <div class="absolute abs-middle ms-90px">
-                                    <span>Emergency Service</span>
-                                    <h4>Call (123) 202-9296</h4>
+                                    <span>Service d’urgence</span>
+                                    <h4>Appeler le  (237) 685 54 85 24</h4>
                                 </div>
                             </a>
                         </div>                        
                         <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".4s">
-                            <a href="installation.html" class="d-block relative bg-dark-2 text-white p-4 rounded-1">
+                            <a href="contact.php" class="d-block relative bg-dark-2 text-white p-4 rounded-1">
                                 <i class="id-color p-3 rounded-1 fs-56 icofont-calculator"></i>
                                 <div class="absolute abs-middle ms-90px">
-                                    <span>Request For</span>
-                                    <h4>Free Estimation</h4>
+                                    <span>Demande de</span>
+                                    <h4>Obtenir un devis gratuit</h4>
                                 </div>
                             </a>
                         </div>
                         <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".6s">
-                            <a href="projects.html" class="d-block relative bg-dark-2 text-white p-4 rounded-1">
+                            <a href="blog.php" class="d-block relative bg-dark-2 text-white p-4 rounded-1">
                                 <i class="id-color p-3 rounded-1 fs-56 icofont-image"></i>
                                 <div class="absolute abs-middle ms-90px">
-                                    <span>Discover</span>
-                                    <h4>Latest Projects</h4>
+                                    <span>Decouvrir</span>
+                                    <h4>Nos projets recent</h4>
                                 </div>
                             </a>
                         </div>
@@ -653,8 +663,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 offset-lg-3 text-center">                            
-                            <div class="subtitle wow fadeInUp mb-3">Do you have</div>
-                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Any Questions</h2>
+                            <div class="subtitle wow fadeInUp mb-3">Avez-vous</div>
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Des questions</h2>
                         </div>
                     </div>
 
@@ -664,47 +674,42 @@
                             <div class="accordion s2 wow fadeInUp">
                                 <div class="accordion-section">
                                     <div class="accordion-section-title" data-tab="#accordion-a1">
-                                        What is the installation process for CCTV?
+                                    Quel est le processus d’installation de la vidéosurveillance ?
                                     </div>
                                     <div class="accordion-section-content" id="accordion-a1">
-                                        The installation process generally includes:
+                                    Le processus d’installation comprend généralement :
                                         <ol>
-                                            <li>Site assessment to determine camera placement.</li>
-                                            <li>Running necessary cabling for power and data (for wired systems).</li>
-                                            <li>Mounting cameras and positioning them properly.</li>
-                                            <li>Setting up recording devices (DVR/NVR) and configuring software for monitoring and storage.</li>
+                                            <li>Évaluation du site pour déterminer l’emplacement de la caméra.</li>
+                                            <li>Effectuer le câblage nécessaire pour l’alimentation et les données (pour les systèmes câblés).</li>
+                                            <li>Monter les caméras et les positionner correctement.</li>
+                                            <li>Configuration des appareils d’enregistrement (DVR/NVR) et configuration des logiciels de surveillance et de stockage.</li>
                                         </ol>
                                     </div>
                                     <div class="accordion-section-title" data-tab="#accordion-a2">
-                                        How many cameras do I need?
+                                    De combien d’appareils photo ai-je besoin ?
                                     </div>
                                     <div class="accordion-section-content" id="accordion-a2">
-                                        The number of cameras depends on the size of the area to be covered and the level of security required. For a small home, 2–4 cameras may suffice, while large commercial properties may require dozens.
-                                    </div>                                        
+                                    Le nombre de caméras dépend de la taille de la zone à couvrir et du niveau de sécurité requis. Pour une petite maison, 2 à 4 caméras peuvent suffire, tandis que les grandes propriétés commerciales peuvent en nécessiter des dizaines.                                    </div>                                        
                                     <div class="accordion-section-title" data-tab="#accordion-a3">
-                                        Can I use CCTV cameras at night?
+                                    Puis-je utiliser des caméras de vidéosurveillance la nuit ?
                                     </div>
                                     <div class="accordion-section-content" id="accordion-a3">
-                                        Yes, many CCTV cameras come equipped with infrared (IR) LEDs for night vision, allowing them to capture footage even in complete darkness.
-                                    </div>
+                                    Oui, de nombreuses caméras de vidéosurveillance sont équipées de LED infrarouges (IR) pour la vision nocturne, ce qui leur permet de capturer des images même dans l’obscurité totale.                                    </div>
                                     <div class="accordion-section-title" data-tab="#accordion-a4">
-                                        What is motion detection in CCTV cameras?
+                                    Qu’est-ce que la détection de mouvement dans les caméras de vidéosurveillance ?
                                     </div>
                                     <div class="accordion-section-content" id="accordion-a4">
-                                        Motion detection triggers the camera to start recording or send an alert when movement is detected. This feature helps save storage space and makes it easier to review important events.
-                                    </div>
+                                    La détection de mouvement déclenche le démarrage de l’enregistrement de la caméra ou l’envoi d’une alerte lorsqu’un mouvement est détecté. Cette fonctionnalité permet d’économiser de l’espace de stockage et facilite l’examen des événements importants.                                    </div>
                                     <div class="accordion-section-title" data-tab="#accordion-a5">
-                                         Is there maintenance required for CCTV systems?
+                                    Y a-t-il un entretien requis pour les systèmes de vidéosurveillance ?
                                     </div>
                                     <div class="accordion-section-content" id="accordion-a5">
-                                        Yes, periodic maintenance includes cleaning camera lenses, ensuring connections are secure, checking for firmware updates, and ensuring the recording devices are functioning properly. Regular maintenance helps ensure reliable performance.
-                                    </div>
+                                    Oui, l’entretien périodique comprend le nettoyage des objectifs de l’appareil photo, la sécurisation des connexions, la vérification des mises à jour du micrologiciel et le bon fonctionnement des appareils d’enregistrement. Un entretien régulier permet de garantir des performances fiables.                                    </div>
                                     <div class="accordion-section-title" data-tab="#accordion-a6">
-                                        Are CCTV cameras weatherproof?
+                                    Les caméras de vidéosurveillance sont-elles résistantes aux intempéries ?
                                     </div>
                                     <div class="accordion-section-content" id="accordion-a6">
-                                        Many CCTV cameras are designed to be weatherproof and can be installed outdoors. Look for cameras with an IP66 or IP67 rating, which means they are resistant to dust and water.
-                                    </div>
+                                    De nombreuses caméras de vidéosurveillance sont conçues pour résister aux intempéries et peuvent être installées à l’extérieur. Recherchez des caméras avec un indice de protection IP66 ou IP67, ce qui signifie qu’elles sont résistantes à la poussière et à l’eau.                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -798,53 +803,6 @@
 
         <!-- footer close -->
     </div>
-
-    <!-- overlay content begin -->
-    <div id="extra-wrap" class="text-light">
-        <div id="btn-close">
-            <span></span>
-            <span></span>
-        </div>
-
-        <div id="extra-content">
-            <img src="images/logo.webp" class="w-150px" alt="">
-
-            <div class="spacer-30-line"></div>
-
-            <h5 class="mb-3">Our Services</h5>
-            
-            <ul class="ul-style-2">
-                <li><a href="services.html">System Consultation</a></li>
-                <li><a href="services.html">Installation Services</a></li>
-                <li><a href="services.html">System Configuration</a></li>
-                <li><a href="services.html">Monitoring Services</a></li>
-                <li><a href="services.html">Maintenance</a></li>
-                <li><a href="services.html">Storage and Backup</a></li>
-            </ul>
-
-
-            <div class="spacer-30-line"></div>
-
-            <h5>Contact Us</h5>
-            <div><i class="icofont-clock-time me-2"></i>Monday - Saturday 08.00 - 18.00</div>
-            <div><i class="icofont-location-pin me-2"></i>100 S Main St, New York, </div>
-            <div><i class="icofont-envelope me-2"></i>contact@ucam-cctv.com</div>    
-
-            <div class="spacer-30-line"></div>
-
-            <h5>About Us</h5>
-            <p>Keep your home or business safe with CCTV systems designed to provide 24/7 surveillance and peace of mind. Our expert team offers tailored security solutions, from installation to remote monitoring, ensuring your property is always protected.</p>
-
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
-        </div>
-    </div>
-    <!-- overlay content end -->
 
 
     <!-- Javascript Files

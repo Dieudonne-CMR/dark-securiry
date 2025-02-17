@@ -64,9 +64,9 @@
                 <div class="container">
                   <div class="row align-items-center justify-content-center">
                     <div class="col-lg-6">
-                        <h2 class="wow fadeInUp">Get In Touch</h2>
+                        <h2 class="wow fadeInUp">Contactez-nous</h2>
 
-                        <p>Whether you have a question, a suggestion, or just want to say hello, this is the place to do it. Please fill out the form below with your details and message, and we'll get back to you as soon as possible.</p>
+                        <p>Que vous ayez une question, une suggestion ou que vous souhaitiez simplement dire bonjour, c’est l’endroit idéal pour le faire. Veuillez remplir le formulaire ci-dessous avec vos coordonnées et votre message, et nous vous répondrons dans les plus brefs délais.</p>
 
                         <div class="spacer-single"></div>
 
@@ -75,16 +75,16 @@
                                 <div class="relative mb-4">
                                     <i class="abs fs-32 p-3 bg-dark-2 icofont-location-pin id-color-2"></i>
                                     <div class="ms-80px">
-                                        <div class="fw-bold text-white">Office Location</div>
-                                        100 S Main St, New York, NY
+                                        <div class="fw-bold text-white">Lieu</div>
+                                        Deido douala cameroun
                                     </div>
                                 </div>
 
                                 <div class="relative mb-4">
                                     <i class="abs fs-32 p-3 bg-dark-2 icofont-envelope id-color-2"></i>
                                     <div class="ms-80px">
-                                        <div class="fw-bold text-white">Send a Message</div>
-                                        contact@ucam-cctv.com
+                                        <div class="fw-bold text-white">Envoyer un message</div>
+                                        darksecurity@gmail.com
                                     </div>
                                 </div>
 
